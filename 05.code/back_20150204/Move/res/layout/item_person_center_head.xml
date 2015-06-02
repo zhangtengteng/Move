@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/back_ground" />
+
+
+        <TextView
+            android:id="@+id/add_person_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="220dp"
+            android:layout_toRightOf="@+id/add_person_head"
+            android:gravity="center"
+            android:text="高圆圆"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_person_starlevel_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="220dp"
+            android:layout_toRightOf="@+id/add_person_username"
+            android:drawableRight="@drawable/ic_detail_start"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/add_person_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_person_starlevel_sum"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/add_person_head"
+            android:gravity="center"
+            android:text="10000000000000"
+            android:textColor="@color/qianmingColor"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/add_person_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="180dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="33dp"
+            android:scaleType="fitXY"
+            android:padding="2dp"
+            android:background="@drawable/head_image_shape"
+            android:src="@drawable/image_loading" />
+
+</RelativeLayout>

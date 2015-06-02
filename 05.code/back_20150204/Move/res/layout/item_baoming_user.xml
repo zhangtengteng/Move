@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="20dp"
+    android:paddingTop="5dp" >
+
+    <com.xuanit.move.view.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_apply_user_heade"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left|top"
+        android:src="@drawable/image_loading"
+        app:border_color="#009FCC"
+        app:border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:minHeight="60dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_apply_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="高圆圆"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_apply_user_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:text="大家都觉得我本人比照片更好看,大家都觉得我本人比照片更好看,大家都觉得我本人比照片更好看大家都觉得我本人比照片更好看"
+            android:textColor="@color/qianmingColor"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

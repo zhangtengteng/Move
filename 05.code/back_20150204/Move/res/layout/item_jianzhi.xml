@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <com.xuanit.move.view.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/jianzhi_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image_loading"
+        app:border_color="@color/white"
+        app:border_width="2dp" />
+
+    <TextView
+        android:id="@+id/jianzhi_mingcheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/jianzhi_head"
+        android:text="兼职名称"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_jianzhi_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jianzhi_mingcheng"
+        android:layout_toRightOf="@+id/jianzhi_head"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="兼职待遇："
+            android:textColor="#838B8B"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/jianzhi_daiyu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="100元/天"
+            android:textColor="#838B8B"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_jianzhi_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_jianzhi_1"
+        android:layout_toRightOf="@+id/jianzhi_head"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="工作地点："
+            android:textColor="#838B8B"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/jianzhi_didian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="肯德基文星路店"
+            android:textColor="#838B8B"
+            android:textSize="10sp" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/ll_jianzhi_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_jianzhi_2"
+        android:layout_toRightOf="@+id/jianzhi_head"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="工作时间："
+            android:textColor="#838B8B"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/jianzhi_gongzuori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="工作日"
+            android:textColor="#838B8B"
+            android:textSize="10sp" />
+    </LinearLayout>
+    
+
+    <TextView
+        android:id="@+id/jianzhi_neirong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_jianzhi_3"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/jianzhi_head"
+        android:text="外卖内容"
+        android:textColor="#838B8B"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/jianzhi_fabu_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/rc_voice_message_unread"
+        android:text="20分钟前发布"
+        android:textColor="#838B8B"
+        android:textSize="10sp" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+ALTER TABLE `user`
+ADD COLUMN `LoginTime`  datetime NULL DEFAULT '1900-01-01 00:00:00' COMMENT '登录时间' AFTER `Birthday`,
+ADD COLUMN `LoginLongitude`  varchar(300) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '当前用户经度' AFTER `LoginTime`,
+ADD COLUMN `LoginLatitude`  varchar(300) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '当前用户纬度' AFTER `LoginLongitude`;
+
+
+ALTER TABLE `newsfeed`
+ADD COLUMN `PublishLongitude`  varchar(300) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '发布消息时经度' AFTER `DateTimeNow`,
+ADD COLUMN `PublishLatitude`  varchar(300) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '发布消息时纬度' AFTER `PublishLongitude`;
+
+
+

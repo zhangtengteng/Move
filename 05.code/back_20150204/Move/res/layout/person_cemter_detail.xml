@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:background="#1581CA"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+   <!--  <LinearLayout
+        android:id="@+id/person_xi_lie_huo_dong"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/footer_shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/img_fensi"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="5dp"
+            android:text="系列活动"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/person_you_xi_zhong_xin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:background="@drawable/footer_shape"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/img_fensi"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="5dp"
+            android:text="游戏中心"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/person_ge_ren_she_zhi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:background="@drawable/footer_shape"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/img_fensi"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:text="个人设置"
+            android:textColor="@color/white"
+            android:textSize="16sp" /> 
+    </LinearLayout>-->
+
+</LinearLayout>

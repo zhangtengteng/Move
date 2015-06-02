@@ -1,0 +1,45 @@
+﻿ALTER TABLE `activity`
+ADD COLUMN `SchoolId`  int(11) NULL DEFAULT 0 COMMENT 'ѧУId' AFTER `LastChangeUser`;
+
+ALTER TABLE `friendsfans`
+ADD COLUMN `SchoolId`  int(11) NULL DEFAULT 0 COMMENT 'ѧУId' AFTER `LastChangeUser`;
+
+
+ALTER TABLE `game`
+ADD COLUMN `SchoolId`  int(11) NULL DEFAULT 0 COMMENT 'ѧУId' AFTER `LastChangeUser`;
+
+
+
+ALTER TABLE `handinformation`
+ADD COLUMN `SchoolId`  int(11) NULL DEFAULT 0 COMMENT 'ѧУId' AFTER `LastChangeUser`;
+
+ALTER TABLE `logisticscompany`
+ADD COLUMN `SchoolId`  int(11) NULL DEFAULT 0 COMMENT 'ѧУId' AFTER `LastChangeUser`;
+
+ALTER TABLE `newsfeed`
+ADD COLUMN `SchoolId`  int(11) NULL DEFAULT 0 COMMENT 'ѧУId' AFTER `LastChangeUser`;
+
+ALTER TABLE `parttimejob`
+ADD COLUMN `SchoolId`  int(11) NULL DEFAULT 0 COMMENT 'ѧУId' AFTER `ContactPhone`;
+
+ALTER TABLE `takeaway`
+ADD COLUMN `SchoolId`  int(11) NULL DEFAULT 0 COMMENT 'ѧУId' AFTER `LastChangeUser`;
+
+ALTER TABLE `praise`
+ADD COLUMN `SchoolId`  int(11) NULL DEFAULT 0 COMMENT '学校Id' AFTER `LastChangeTime`;
+
+ALTER TABLE `user`
+ADD COLUMN `DateTimeNow`  datetime NULL DEFAULT '1900-01-01 00:00:00' COMMENT '创建时间' AFTER `LastChangeUser`;
+
+
+
+ALTER TABLE `college`
+ADD COLUMN `StudentNumLength`  int(10) NULL AFTER `CollegeName`,
+ADD COLUMN `ClassStart`  int(10) NULL AFTER `StudentNumLength`,
+ADD COLUMN `ClassEnd`  int(10) NULL AFTER `ClassStart`;
+
+
+
+ALTER TABLE `newsfeed`
+ADD COLUMN `DateTimeNow`  datetime NULL DEFAULT '1900-01-01 00:00:00' COMMENT '创建时间' AFTER `SchoolId`;
+

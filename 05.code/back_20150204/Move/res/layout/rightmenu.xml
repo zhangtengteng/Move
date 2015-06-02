@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/type_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseColor"
+    android:gravity="center_horizontal"
+    
+    android:orientation="vertical" >
+
+    <com.xuanit.move.view.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_heade"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image_loading"
+        app:border_color="@color/white"
+        app:border_width="2dp" />
+
+    <TextView
+        android:id="@+id/type_userName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="0dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/geren_qianming"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/comment_personal_sign"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="0dp"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:text="收到的星星："
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/star_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="116"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/ic_detail_start_1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/but_selector"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/person_center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/img_dongtan"
+            android:gravity="center"
+            android:text="个人中心"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_right_lift_center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@color/baseColor_dark"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_main_lifecenter_2"
+            android:gravity="center"
+            android:text="生活中心"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dong_tan_fen_si"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_main_friend_3"
+            android:gravity="center"
+            android:text="动弹粉丝"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+<!--     <LinearLayout
+        android:id="@+id/ll_hao_you"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@color/baseColor_dark"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_detail_people_3"
+            android:gravity="center"
+            android:text="我的好友 "
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout> -->
+    
+<!--     <LinearLayout
+        android:id="@+id/person_xi_lie_huo_dong"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_main_acticity_2"
+            android:gravity="center"
+            android:text="系列活动"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/person_you_xi_zhong_xin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+ 		android:background="@color/baseColor_dark"
+        android:gravity="center"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_main_game_3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="游戏中心"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+<!--     <LinearLayout
+        android:id="@+id/ll_buan_liu_xing_dong"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_main_aixin"
+            android:gravity="center"
+            android:text="暖流行动"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/person_ge_ren_she_zhi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:drawableLeft="@drawable/ic_main_set_3"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="设置中心"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

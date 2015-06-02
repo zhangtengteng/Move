@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <com.xuanit.move.view.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/waimai_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/image_loading"
+        app:border_color="@color/white"
+        app:border_width="2dp" />
+
+    <TextView
+        android:id="@+id/waimai_mingcheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/waimai_head"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/waimai_head"
+        android:text="外卖名称"
+        android:textSize="16sp" />
+    <LinearLayout 
+        android:id="@+id/ll_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waimai_mingcheng"
+        android:layout_toRightOf="@+id/waimai_head"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textStyle="italic"
+        android:textColor="#838B8B"
+        android:textSize="12sp"
+        android:text="联系电话：" />
+    
+    <TextView
+        android:id="@+id/waimai_dianhua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:textColor="#838B8B"
+        android:text="18888888888" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/waimai_neirong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_phone"
+        android:layout_toRightOf="@+id/waimai_head"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:textColor="#838B8B"
+        android:text="外卖内容" />
+
+    <TextView
+        android:drawableLeft="@drawable/rc_voice_message_unread"
+        android:id="@+id/waimai_juli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/waimai_send_time"
+        android:text="距离0.15KM"
+        android:textSize="10sp"
+        android:textColor="#838B8B" />
+
+    <TextView
+        android:drawableLeft="@drawable/rc_voice_message_unread"
+        android:id="@+id/waimai_send_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="送餐速度20分钟"
+        android:textColor="#838B8B"
+        android:textSize="10sp" />
+
+</RelativeLayout>

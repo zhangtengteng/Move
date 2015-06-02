@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用白 黑 蓝色(标题颜色) -->
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#b2000000</color>
+    <color name="black">#000000</color>
+    <color name="view_title">#e6e6e6</color>
+    <color name="title_background">#0f8fbf</color>
+    <color name="login_press">#075e84</color>
+    <color name="btn_color">#075e84</color>
+    <color name="launchertextcolor">#8E8E92</color>
+    <color name="regEditback">#e4e4e4</color>
+    <color name="regEditline">#989898</color>
+    <color name="software_textColor_selected">#FF1C94EA</color>
+    <color name="software_textColor_unselected">#FFDCE0DF</color>
+    <color name="blue_text">#3366CC</color>
+    <color name="list_item_selected">#ffe1e1e1</color>
+    <color name="list_item_normal">#c1daeb</color>
+    <color name="shape_line">#ffcccccc</color>
+    <color name="window_bg">#c1daeb</color>
+    <color name="btn_no_click">#0082CD</color>
+    <color name="btn_had_click">#81BEE3</color>
+    <color name="right_menu_bg_color">#3FA9F5</color>
+    <color name="right_menu_bt_color">#49ACFF</color>
+    <color name="right_menu_list_color">#1581CA</color>
+    <color name="gray">#7c7c7c</color>
+    <color name="baseColor">#3498DB</color>
+    <color name="baseColor_dark">#007799</color>
+    <color name="whitesmoke">#F5F5F5</color>
+ <!-- 烟白色 -->
+    <color name="fontcolor">#444444</color>
+ <!-- 淡黑色 -->
+    <color name="gainsboro">#DCDCDC</color>
+ <!-- 淡灰色 -->
+    <color name="qianmingColor">#8A8A8A</color>
+    <color name="footer_text_color">#888888</color>
+
+    <!-- 上传图片添加的颜色 -->
+    <color name="none_color">#00000000</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="albumback">#E1E0DE</color>
+
+</resources>
