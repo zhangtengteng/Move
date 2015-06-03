@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LifeCenterActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/baseColor"
+        android:gravity="center"
+        android:padding="2dp" >
+
+        <Button
+            android:id="@+id/bt_dongtan_haoyou"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_left_click_shape"
+            android:text="好友"
+            android:textColor="@color/baseColor"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_dongtan_fensi"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_center_shape"
+            android:text="粉丝"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_dongtan_tuijian"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_right_shape"
+            android:text="推荐"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/edit_text_shape"
+            android:baselineAligned="false"
+            android:iconifiedByDefault="true"
+            android:imeOptions="actionSearch"
+            android:inputType="textCapWords"
+            android:paddingLeft="0dp"
+            android:queryHint="输入名字或动弹号进行查找" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pulltorefrshListView_dongtan"
+            style="@style/mListView_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_dongtan_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="没有好友:)"
+            android:textColor="@color/gray"
+            android:textSize="18sp" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

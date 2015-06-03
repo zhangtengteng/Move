@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textview_out_shape"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/mEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_detail_people"
+                android:gravity="left|center_vertical"
+                android:hint="请输入手机号码"
+                android:imeOptions="actionNext"
+                android:maxLength="12"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="test-001李芳"
+                android:textSize="16sp" >
+            </EditText>
+            <!-- android:inputType="phone" -->
+
+            <ImageButton
+                android:id="@+id/clearName"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/clear_icon"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DCDCDC" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/pwd"
+                style="@style/mEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_detal_pwd"
+                android:gravity="left|center_vertical"
+                android:hint="请输入密码"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="123456"
+                android:textSize="16sp" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/clearPass"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/clear_icon"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_login_jizhu"
+        style="@style/mCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:checked="false"
+        android:text="   记住账号和密码" />
+
+    <Button
+        android:id="@+id/login_but_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/login_but_forgetPwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button"
+        android:text="忘记密码"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/re_loadview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/loadview" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical"
+    tools:context=".HuoDongActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/baseColor"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btn_guanfang"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+             android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_left_click_shape"
+            android:text="官方"
+            android:textColor="@color/baseColor"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_geren"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_right_shape"
+            android:text="个人"
+            android:textColor="@color/white" 
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/edit_text_shape"
+            android:baselineAligned="true"
+            android:iconifiedByDefault="true"
+            android:imeOptions="actionSearch"
+            android:inputType="textCapWords"
+            android:paddingLeft="0dp"
+            android:queryHint="输入相关内容进行搜索" />
+    </LinearLayout>
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pulltorefreshlistview_huodong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="10dp"
+            style="@style/mListView_2" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </RelativeLayout>
+
+</LinearLayout>

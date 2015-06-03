@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/type_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_setting"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_comment_decide"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#20FFFFFF"
+            android:clickable="true"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/user_shezhi"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:drawableLeft="@drawable/icon_setting_user"
+                android:gravity="center|left"
+                android:text="@string/comment_decide"
+                android:textColor="@color/fontcolor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_comment_checknewversion"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="0.5dp"
+            android:background="#20FFFFFF"
+            android:clickable="true"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:drawableLeft="@drawable/icon_setting_update"
+                android:gravity="center|left"
+                android:text="@string/comment_checknewversion"
+                android:textColor="@color/fontcolor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_tel_connect"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="0.5dp"
+            android:background="#20FFFFFF"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:drawableLeft="@drawable/icon_setting_email"
+                android:gravity="center|left"
+                android:text="@string/comment_tel_connect"
+                android:textColor="@color/fontcolor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_comment_about"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="0.5dp"
+            android:background="#20FFFFFF"
+            android:clickable="true"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:drawableLeft="@drawable/icon_setting_setting"
+                android:gravity="center|left"
+                android:text="@string/comment_about"
+                android:textColor="@color/fontcolor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_comment_helpandadvise"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="0.5dp"
+            android:background="#20FFFFFF"
+            android:clickable="true"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:drawableLeft="@drawable/icon_setting_help"
+                android:gravity="center|left"
+                android:text="@string/comment_helpandadvise"
+                android:textColor="@color/fontcolor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comment_exit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/icon_setting_back"
+            android:gravity="center|left"
+            android:text="@string/comment_exit"
+            android:textColor="@color/fontcolor"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

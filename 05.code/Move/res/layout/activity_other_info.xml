@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+<!-- 
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/back_ground" />
+
+        <com.xuanit.move.view.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_user_heade"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/image_loading"
+            app:border_color="#FF7E68"
+            app:border_width="3dp" />
+
+        <TextView
+            android:id="@+id/tv_other_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="周杰伦"
+            android:textColor="#FF7E68"
+            android:textSize="24sp"
+            android:layout_below="@+id/iv_user_heade"/>
+
+    </RelativeLayout>
+ -->
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/prl_other"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/mListView_2" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+	<TextView
+	    android:id="@+id/tv_tip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:textSize="16sp"
+	    android:textColor="#888888"
+	    android:text="没有关于她/他的信息"
+	    android:visibility="gone" />
+
+</FrameLayout>
